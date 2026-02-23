@@ -218,15 +218,84 @@ p { color: #374151; margin-bottom: 1rem; }
 .about-contact h2 { margin-top: 0; }
 .about-contact p { margin-bottom: 1.25rem; }
 
+/* ── Logo Image ─────────────────────────────────────────────────────────────── */
+.logo-img { display: flex; align-items: center; }
+.logo-img img { height: 36px; width: auto; }
+
+/* ── Hero Badges (homepage niche links) ─────────────────────────────────────── */
+.hero--home .hero-inner { grid-template-columns: 1fr 1fr; }
+.hero-badges {
+  display: flex; flex-direction: column; gap: 0.65rem;
+  align-items: flex-start;
+}
+.hero-niche-badge {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  padding: 0.6rem 1.1rem; border-radius: 20px;
+  font-weight: 700; font-size: 0.95rem;
+  box-shadow: var(--shadow-md); transition: transform 0.15s, box-shadow 0.15s;
+}
+.hero-niche-badge:hover { transform: translateX(4px); box-shadow: 0 6px 20px rgba(0,0,0,0.13); }
+
+/* ── Niches Section (homepage grid) ─────────────────────────────────────────── */
+.niches-section { padding: 5rem 0; }
+.niches-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.25rem;
+}
+.niche-card {
+  display: flex; flex-direction: column;
+  background: #fff; border-radius: var(--radius);
+  padding: 1.75rem 1.5rem;
+  box-shadow: var(--shadow);
+  border-top: 4px solid var(--accent, #2563eb);
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+.niche-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-md); }
+.niche-card h3 { font-size: 1rem; margin-bottom: 0.4rem; }
+.niche-card p { font-size: 0.88rem; color: #4b5563; flex: 1; margin-bottom: 1rem; }
+.niche-card-icon {
+  font-size: 2rem; margin-bottom: 0.85rem;
+  width: 52px; height: 52px; border-radius: 12px;
+  background: var(--accent-light, #dbeafe);
+  display: flex; align-items: center; justify-content: center;
+}
+.niche-card-link {
+  font-size: 0.85rem; font-weight: 700;
+  color: var(--accent, #2563eb);
+  margin-top: auto;
+}
+
+/* ── Niche Page Layout ───────────────────────────────────────────────────────── */
+.niche-page { padding: 3rem 0 5rem; }
+
+/* ── Category Nav (filter tabs) ─────────────────────────────────────────────── */
+.category-nav {
+  display: flex; gap: 0.5rem; flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+}
+.cat-btn {
+  background: var(--gray-light); border: 2px solid transparent;
+  color: var(--gray); padding: 0.45rem 1rem; border-radius: 20px;
+  font-size: 0.85rem; font-weight: 600; transition: all 0.15s;
+  cursor: pointer;
+}
+.cat-btn:hover { background: var(--blue-light); color: var(--blue); border-color: var(--blue-light); }
+.cat-btn.active { background: var(--blue); color: #fff; border-color: var(--blue); }
+
 /* ── Responsive ─────────────────────────────────────────────────────────────── */
 @media (max-width: 900px) {
   .hero-inner { grid-template-columns: 1fr; }
+  .hero--home .hero-inner { grid-template-columns: 1fr; }
   .hero-graphic { display: none; }
+  .hero-badges { flex-direction: row; flex-wrap: wrap; }
   .about-strip-inner { grid-template-columns: 1fr; gap: 2rem; }
   .about-strip-stats { justify-content: flex-start; gap: 2rem; }
   .footer-inner { grid-template-columns: 1fr 1fr; }
   .footer-brand { grid-column: 1 / -1; }
   .about-niches { grid-template-columns: 1fr; }
+  .niches-grid { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
 }
 @media (max-width: 640px) {
   .nav-links { display: none; }
