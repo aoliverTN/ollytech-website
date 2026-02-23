@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="OllyTech - Honest reviews and recommendations for health & wellness products and the latest technology gear. Find what actually works." />
-  <title>OllyTech | Health, Wellness & Tech Picks That Actually Work</title>
+  <meta name="description" content="OllyTech — honest, research-backed product recommendations across health & wellness, technology, fitness, Jeep & overlanding, and hunting & outdoors." />
+  <title>OllyTech | Honest Picks Across Every Passion</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
@@ -12,222 +12,139 @@
 </head>
 <body>
 
-  <!-- ── Nav ── -->
   <header class="site-header">
     <nav class="nav container">
-      <a href="/" class="logo">Olly<span>Tech</span></a>
+      <a href="/" class="logo-img"><img src="images/logo.svg" alt="OllyTech" height="36" /></a>
       <ul class="nav-links">
-        <li><a href="#health">Health &amp; Wellness</a></li>
-        <li><a href="#tech">Technology</a></li>
+        <li><a href="health-wellness.html">Health</a></li>
+        <li><a href="technology.html">Tech</a></li>
+        <li><a href="fitness.html">Fitness</a></li>
+        <li><a href="jeep-overlanding.html">Jeep</a></li>
+        <li><a href="hunting-outdoors.html">Outdoors</a></li>
         <li><a href="about.html">About</a></li>
       </ul>
       <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
     </nav>
   </header>
 
-  <!-- ── Hero ── -->
-  <section class="hero">
+  <!-- Hero -->
+  <section class="hero hero--home">
     <div class="container hero-inner">
       <div class="hero-text">
-        <span class="hero-tag">Honest Reviews. Real Results.</span>
-        <h1>Products That Actually <span class="highlight">Work</span></h1>
+        <span class="hero-tag">Real Research. No Hype.</span>
+        <h1>Gear &amp; Products That <span class="highlight">Earn Their Keep</span></h1>
         <p class="hero-sub">
-          I test and research health &amp; wellness products and tech gear so you don't waste money on things that don't deliver.
-          Every recommendation is based on real research — not sponsored hype.
+          From trail-tested overlanding gear to research-backed supplements —
+          I dig into what actually works so you can buy with confidence and skip the regret.
         </p>
-        <div class="hero-actions">
-          <a href="#health" class="btn-primary">Health &amp; Wellness Picks</a>
-          <a href="#tech" class="btn-outline">Tech Recommendations</a>
-        </div>
+        <a href="#niches" class="btn-primary">Explore All Niches</a>
       </div>
-      <div class="hero-graphic">
-        <div class="hero-badge badge-health">💊 Wellness</div>
-        <div class="hero-badge badge-tech">💻 Tech</div>
-        <div class="hero-circle"></div>
+      <div class="hero-badges">
+        <a href="health-wellness.html" class="hero-niche-badge" style="background:#d1fae5;color:#065f46">🌿 Health</a>
+        <a href="technology.html" class="hero-niche-badge" style="background:#dbeafe;color:#1e40af">💻 Tech</a>
+        <a href="fitness.html" class="hero-niche-badge" style="background:#fce7f3;color:#9d174d">🏋️ Fitness</a>
+        <a href="jeep-overlanding.html" class="hero-niche-badge" style="background:#fef3c7;color:#92400e">🚙 Jeep</a>
+        <a href="hunting-outdoors.html" class="hero-niche-badge" style="background:#ecfdf5;color:#065f46">🦌 Outdoors</a>
       </div>
     </div>
   </section>
 
-  <!-- ── Trust Bar ── -->
+  <!-- Trust Bar -->
   <div class="trust-bar">
     <div class="container trust-inner">
       <div class="trust-item"><span class="trust-icon">🔍</span> Research-backed picks</div>
       <div class="trust-item"><span class="trust-icon">💯</span> Honest pros &amp; cons</div>
-      <div class="trust-item"><span class="trust-icon">🚫</span> No sponsored content</div>
-      <div class="trust-item"><span class="trust-icon">📋</span> FTC-compliant disclosures</div>
+      <div class="trust-item"><span class="trust-icon">🚫</span> No paid placements</div>
+      <div class="trust-item"><span class="trust-icon">📋</span> FTC-compliant</div>
     </div>
   </div>
 
-  <!-- ── Health & Wellness ── -->
-  <section class="picks-section" id="health">
+  <!-- Niche Cards -->
+  <section class="niches-section" id="niches">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag tag-health">Health &amp; Wellness</span>
-        <h2>Wellness Products Worth Your Money</h2>
-        <p>From supplements to fitness gear, these are the products backed by research and real-world results.</p>
+        <h2>Browse by Category</h2>
+        <p>Five niches. One standard: only recommend what's actually worth the money.</p>
       </div>
+      <div class="niches-grid">
 
-      <div class="picks-grid">
-        <article class="pick-card">
-          <div class="pick-label label-top">Top Pick</div>
-          <div class="pick-icon">🐟</div>
-          <h3>Omega-3 Fish Oil</h3>
-          <p>High-potency EPA/DHA for heart health, inflammation, and cognitive support. Look for third-party tested brands.</p>
-          <div class="pick-tags">
-            <span class="tag">Heart Health</span>
-            <span class="tag">Brain Health</span>
-            <span class="tag">Inflammation</span>
-          </div>
-          <div class="pick-footer">
-            <span class="pick-category">Supplements</span>
-            <a href="#" class="pick-link">See Options &rarr;</a>
-          </div>
-        </article>
+        <a href="health-wellness.html" class="niche-card" style="--accent:#16a34a;--accent-light:#d1fae5">
+          <div class="niche-card-icon">🌿</div>
+          <h3>Health &amp; Wellness</h3>
+          <p>Supplements, recovery tools, sleep aids, and everyday wellness products backed by research — not marketing.</p>
+          <span class="niche-card-link">Browse Picks &rarr;</span>
+        </a>
 
-        <article class="pick-card">
-          <div class="pick-icon">🧘</div>
-          <h3>Resistance Band Sets</h3>
-          <p>Full-body workouts at home without expensive equipment. Great for rehab, strength training, and mobility work.</p>
-          <div class="pick-tags">
-            <span class="tag">Fitness</span>
-            <span class="tag">Home Gym</span>
-            <span class="tag">Portable</span>
-          </div>
-          <div class="pick-footer">
-            <span class="pick-category">Fitness Gear</span>
-            <a href="#" class="pick-link">See Options &rarr;</a>
-          </div>
-        </article>
+        <a href="technology.html" class="niche-card" style="--accent:#2563eb;--accent-light:#dbeafe">
+          <div class="niche-card-icon">💻</div>
+          <h3>Technology</h3>
+          <p>Cameras, smart home gear, audio equipment, and productivity tools that actually solve real problems.</p>
+          <span class="niche-card-link">Browse Picks &rarr;</span>
+        </a>
 
-        <article class="pick-card">
-          <div class="pick-icon">😴</div>
-          <h3>Magnesium Glycinate</h3>
-          <p>The most bioavailable form of magnesium. Supports sleep quality, muscle recovery, and stress reduction.</p>
-          <div class="pick-tags">
-            <span class="tag">Sleep</span>
-            <span class="tag">Recovery</span>
-            <span class="tag">Stress Relief</span>
-          </div>
-          <div class="pick-footer">
-            <span class="pick-category">Supplements</span>
-            <a href="#" class="pick-link">See Options &rarr;</a>
-          </div>
-        </article>
+        <a href="fitness.html" class="niche-card" style="--accent:#9d174d;--accent-light:#fce7f3">
+          <div class="niche-card-icon">🏋️</div>
+          <h3>Fitness Equipment</h3>
+          <p>Home gym equipment from adjustable dumbbells to full power racks — researched for quality, durability, and value.</p>
+          <span class="niche-card-link">Browse Picks &rarr;</span>
+        </a>
+
+        <a href="jeep-overlanding.html" class="niche-card" style="--accent:#d97706;--accent-light:#fef3c7">
+          <div class="niche-card-icon">🚙</div>
+          <h3>Jeep &amp; Overlanding</h3>
+          <p>Lift kits, bumpers, rooftop tents, recovery gear, and lighting for Jeep builds and overland adventures.</p>
+          <span class="niche-card-link">Browse Picks &rarr;</span>
+        </a>
+
+        <a href="hunting-outdoors.html" class="niche-card" style="--accent:#065f46;--accent-light:#ecfdf5">
+          <div class="niche-card-icon">🦌</div>
+          <h3>Hunting &amp; Outdoors</h3>
+          <p>Optics, fish finders, trail cameras, hunting packs, and field gear for serious hunters and anglers.</p>
+          <span class="niche-card-link">Browse Picks &rarr;</span>
+        </a>
+
       </div>
     </div>
   </section>
 
-  <!-- ── Technology ── -->
-  <section class="picks-section picks-section--alt" id="tech">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag tag-tech">Technology</span>
-        <h2>Tech That Solves Real Problems</h2>
-        <p>Gadgets, tools, and gear I've actually researched — cutting through the noise so you can buy with confidence.</p>
-      </div>
-
-      <div class="picks-grid">
-        <article class="pick-card">
-          <div class="pick-label label-top">Best Value</div>
-          <div class="pick-icon">🎧</div>
-          <h3>Noise-Canceling Headphones</h3>
-          <p>Deep focus, travel comfort, and call quality. The right pair changes how you work and unwind.</p>
-          <div class="pick-tags">
-            <span class="tag">Productivity</span>
-            <span class="tag">Travel</span>
-            <span class="tag">Audio</span>
-          </div>
-          <div class="pick-footer">
-            <span class="pick-category">Audio</span>
-            <a href="#" class="pick-link">See Options &rarr;</a>
-          </div>
-        </article>
-
-        <article class="pick-card">
-          <div class="pick-icon">🔌</div>
-          <h3>USB-C Charging Hubs</h3>
-          <p>Power your laptop, phone, and accessories from a single cable. A game-changer for a clean desk setup.</p>
-          <div class="pick-tags">
-            <span class="tag">Workspace</span>
-            <span class="tag">Productivity</span>
-            <span class="tag">Power</span>
-          </div>
-          <div class="pick-footer">
-            <span class="pick-category">Accessories</span>
-            <a href="#" class="pick-link">See Options &rarr;</a>
-          </div>
-        </article>
-
-        <article class="pick-card">
-          <div class="pick-icon">📡</div>
-          <h3>Mesh WiFi Systems</h3>
-          <p>Eliminate dead zones for good. Whole-home coverage that actually holds up through walls and floors.</p>
-          <div class="pick-tags">
-            <span class="tag">Smart Home</span>
-            <span class="tag">Networking</span>
-            <span class="tag">Work From Home</span>
-          </div>
-          <div class="pick-footer">
-            <span class="pick-category">Networking</span>
-            <a href="#" class="pick-link">See Options &rarr;</a>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── About Strip ── -->
+  <!-- About Strip -->
   <section class="about-strip">
     <div class="container about-strip-inner">
       <div class="about-strip-text">
         <h2>Why Trust OllyTech?</h2>
-        <p>
-          I'm not a big media company with advertisers to please. I'm an IT professional and health enthusiast
-          who got tired of sifting through fake reviews to find products that actually deliver.
-          Every pick on this site is researched, vetted, and honestly evaluated.
-        </p>
+        <p>I'm an IT professional and outdoor enthusiast who got tired of wading through fake reviews. Every recommendation on this site went through real research — specs, third-party testing, customer feedback, and honest evaluation of value.</p>
         <a href="about.html" class="btn-outline-dark">More About Me &rarr;</a>
       </div>
       <div class="about-strip-stats">
-        <div class="stat"><div class="stat-num">2</div><div class="stat-label">Niches Covered</div></div>
-        <div class="stat"><div class="stat-num">100%</div><div class="stat-label">Honest Reviews</div></div>
+        <div class="stat"><div class="stat-num">5</div><div class="stat-label">Niches</div></div>
+        <div class="stat"><div class="stat-num">100%</div><div class="stat-label">Honest</div></div>
         <div class="stat"><div class="stat-num">0</div><div class="stat-label">Paid Placements</div></div>
       </div>
     </div>
   </section>
 
-  <!-- ── Footer ── -->
   <footer class="site-footer">
     <div class="container footer-inner">
       <div class="footer-brand">
-        <a href="/" class="logo">Olly<span>Tech</span></a>
-        <p>Honest product recommendations for health &amp; wellness and technology.</p>
+        <a href="/" class="logo-img"><img src="images/logo.svg" alt="OllyTech" height="30" /></a>
+        <p>Honest picks across health, tech, fitness, Jeep, and outdoors.</p>
       </div>
-      <div class="footer-links">
-        <h4>Pages</h4>
-        <ul>
-          <li><a href="about.html">About</a></li>
-          <li><a href="privacy-policy.html">Privacy Policy</a></li>
-        </ul>
-      </div>
-      <div class="footer-links">
-        <h4>Niches</h4>
-        <ul>
-          <li><a href="#health">Health &amp; Wellness</a></li>
-          <li><a href="#tech">Technology</a></li>
-        </ul>
-      </div>
+      <div class="footer-links"><h4>Niches</h4><ul>
+        <li><a href="health-wellness.html">Health &amp; Wellness</a></li>
+        <li><a href="technology.html">Technology</a></li>
+        <li><a href="fitness.html">Fitness Equipment</a></li>
+        <li><a href="jeep-overlanding.html">Jeep &amp; Overlanding</a></li>
+        <li><a href="hunting-outdoors.html">Hunting &amp; Outdoors</a></li>
+      </ul></div>
+      <div class="footer-links"><h4>Site</h4><ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+      </ul></div>
     </div>
-    <div class="footer-bottom">
-      <div class="container">
-        <p class="disclosure">
-          <strong>Affiliate Disclosure:</strong> OllyTech participates in affiliate marketing programs, including the Amazon Associates Program.
-          We may earn a commission when you purchase through links on this site, at no additional cost to you.
-          We only recommend products we genuinely believe in.
-        </p>
-        <p class="copyright">&copy; 2026 OllyTech. All rights reserved.</p>
-      </div>
-    </div>
+    <div class="footer-bottom"><div class="container">
+      <p class="disclosure"><strong>Affiliate Disclosure:</strong> OllyTech participates in affiliate programs including Amazon Associates. We may earn a commission on qualifying purchases at no extra cost to you.</p>
+      <p class="copyright">&copy; 2026 OllyTech. All rights reserved.</p>
+    </div></div>
   </footer>
 
   <script src="js/main.js"></script>
