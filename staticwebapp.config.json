@@ -5,6 +5,14 @@
       "redirect": "/privacy-policy.html"
     },
     {
+      "route": "/terms",
+      "redirect": "/terms-of-service.html"
+    },
+    {
+      "route": "/tos",
+      "redirect": "/terms-of-service.html"
+    },
+    {
       "route": "/about-us",
       "redirect": "/about.html"
     }
